@@ -1,0 +1,33 @@
+@import 'user';
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.container {
+  max-width: 490px;
+  min-width: 365px;
+  padding: 15px 20px 0 20px;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    max-width: 285px;
+  }
+}
