@@ -1,6 +1,10 @@
 import { User } from 'components/User';
+import { useCommentsState } from 'hooks/useCommentsState';
+
+import db from 'db/db.json';
 
 export const App = () => {
+  const { comments, addComment } = useCommentsState(db.comments);
   return (
     <div className="container">
       <User
