@@ -43,31 +43,28 @@
     border-radius: 5px;
     background: #fffbc8;
     border: 1px solid #dadada;
-  }
 
-  &__about-desc span {
-    font-size: 14px;
-    color: #333333;
+    span {
+      font-size: 14px;
+      color: #333333;
+    }
   }
 }
 
 @media (max-width: 600px) {
-  .about {
+  .user {
     padding-top: 18px;
 
-    &__about-desc {
-      padding: 7px 10px 6px 28px;
-    }
+    &__avatar {
+      left: 0px;
+      top: -10px;
 
-    &__avatar img {
-      border-radius: 50%;
-      width: 107px;
-      height: 101px;
-      cursor: pointer;
-    }
-
-    &__about-desc span {
-      font-size: 11px;
+      img {
+        border-radius: 50%;
+        width: 107px;
+        height: 101px;
+        cursor: pointer;
+      }
     }
 
     &__about h1 {
@@ -82,32 +79,32 @@
       margin-bottom: 3px;
     }
 
-    &__avatar {
-      left: 0px;
-      top: -10px;
+    &__about-desc {
+      padding: 7px 10px 6px 28px;
+
+      span {
+        font-size: 11px;
+      }
     }
   }
 }
 
 @media (max-width: 480px) {
-  .about {
+  .user {
     padding-top: 16px;
 
     &__inner {
       padding-left: 80px;
     }
 
-    &__about-desc {
-      padding: 6px 8px 5px 28px;
-    }
+    &__avatar {
+      left: 0px;
+      top: -10px;
 
-    &__avatar img {
-      width: 100px;
-      height: 95px;
-    }
-
-    &__about-desc span {
-      font-size: 9px;
+      img {
+        width: 100px;
+        height: 95px;
+      }
     }
 
     &__about h1 {
@@ -118,47 +115,54 @@
 
     &__about p {
       padding-left: 26px;
-      font-size: 7px;
-      margin-bottom: 2px;
+      font-size: 9px;
+      margin-bottom: 5px;
     }
 
-    &__avatar {
-      left: 0px;
-      top: -10px;
+    &__about-desc {
+      padding: 6px 8px 5px 25px;
+
+      span {
+        font-size: 10px;
+      }
     }
   }
 }
 
 @media (max-width: 375px) {
-  .about {
+  .user {
     padding-top: 16px;
 
     &__inner {
       padding-left: 56px;
     }
 
-    &__about-desc {
-      padding: 1px 8px 1px 29px;
-    }
+    &__avatar {
+      left: 0;
+      top: 0;
 
-    &__avatar img {
-      width: 75px;
-      height: 70px;
-    }
-
-    &__about-desc span {
-      font-size: 7px;
+      img {
+        width: 80px;
+        height: 80px;
+      }
     }
 
     &__about h1 {
       font-size: 13px;
-      padding-left: 26px;
+      padding-left: 30px;
       margin-bottom: 0;
     }
 
-    &_avatar {
-      left: 0;
-      top: 3px;
+    &__about p {
+      padding-left: 30px;
+    }
+
+    &__about-desc {
+      padding: 4px 15px 4px 30px;
+
+      span {
+        font-size: 9px;
+      }
     }
   }
 }
