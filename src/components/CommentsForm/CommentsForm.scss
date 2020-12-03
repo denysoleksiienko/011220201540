@@ -1,0 +1,83 @@
+.form {
+  padding: 28px 0px 34px 0px;
+  background: #f2f2f2;
+  text-align: center;
+  width: 100%;
+
+  &__area {
+    max-width: 90%;
+    margin-bottom: 23px;
+    padding: 10px;
+    height: 80px;
+    resize: none;
+    overflow: hidden;
+  }
+
+  &__btn-submit {
+    background: #fdd639;
+    border-radius: 23px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 13px 48px 11px 43px;
+  }
+
+  &__btn-submit:hover {
+    background: #caab2d;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 600px) {
+  .form {
+    padding: 20px 0px 26px 0px;
+
+    &__area {
+      margin-bottom: 15px;
+      padding: 5px;
+      height: 53px;
+      margin-bottom: 15px;
+    }
+
+    &__btn-submit {
+      font-size: 13px;
+      padding: 10px 41px 9px 40px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .form {
+    padding: 20px 0px 26px 0px;
+
+    &__area {
+      margin-bottom: 15px;
+      padding: 5px;
+      height: 53px;
+      margin-bottom: 15px;
+    }
+
+    &__btn-submit {
+      font-size: 12px;
+      padding: 8px 36px 7px 37px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .form {
+    padding: 14px 0px 16px 0px;
+
+    &__area {
+      padding: 4px;
+      height: 40px;
+      margin-bottom: 10px;
+    }
+
+    &__btn-submit {
+      font-size: 10px;
+      padding: 5px 25px 5px 27px;
+    }
+  }
+}

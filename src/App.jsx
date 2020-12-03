@@ -1,6 +1,7 @@
 import { User } from 'components/User';
 import { ProgressBar } from 'components/ProgressBar';
 import { CommentsList } from 'components/CommentsList';
+import { CommentsForm } from 'components/CommentsForm';
 import { useCommentsState } from 'hooks/useCommentsState';
 
 import db from 'db/db.json';
@@ -20,6 +21,16 @@ export const App = () => {
       <ProgressBar />
 
       <CommentsList comments={comments} />
+
+      <CommentsForm
+        saveComment={(commentsText) => {
+          const trimmedText = commentsText.trim();
+
+          if (trimmedText.length > 0) {
+            addComment(trimmedText);
+          }
+        }}
+      />
     </div>
   );
 };
