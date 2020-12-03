@@ -1,4 +1,5 @@
 import photo from 'assets/photo.png';
+import './User.scss';
 
 export const User = ({ name, job, service }) => {
   return (

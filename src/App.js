@@ -3,6 +3,8 @@ import { useCommentsState } from 'hooks/useCommentsState';
 
 import db from 'db/db.json';
 
+import './App.scss';
+
 export const App = () => {
   const { comments, addComment } = useCommentsState(db.comments);
   return (
