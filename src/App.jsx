@@ -1,5 +1,6 @@
 import { User } from 'components/User';
 import { ProgressBar } from 'components/ProgressBar';
+import { CommentsList } from 'components/CommentsList';
 import { useCommentsState } from 'hooks/useCommentsState';
 
 import db from 'db/db.json';
@@ -17,6 +18,8 @@ export const App = () => {
       />
 
       <ProgressBar />
+
+      <CommentsList comments={comments} />
     </div>
   );
 };
